@@ -46,17 +46,18 @@ fun Calc_Screen(navController: NavHostController) {
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
-            .background(color = Color.LightGray)
+            .background(color = Color.DarkGray)
     ) {
 
 
         Text(
-            text = "Answer",
-            color = Color.Red,
+            text = answer,
+            color = Color.Blue,
             fontFamily = FontFamily.Serif,
             fontSize = 30.sp,
             fontStyle = FontStyle.Italic
         )
+        Spacer(modifier = Modifier.height(50.dp))
         OutlinedTextField(
             value = firstnum,
             onValueChange = { firstnum = it },
@@ -64,7 +65,7 @@ fun Calc_Screen(navController: NavHostController) {
                 Text(
                     text = "Enter first No.",
                     fontSize = 30.sp,
-                    color = Color.Blue
+                    color = Color.Black
                 )
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
@@ -79,7 +80,7 @@ fun Calc_Screen(navController: NavHostController) {
                 Text(
                     text = "Enter second No.",
                     fontSize = 30.sp,
-                    color = Color.Blue
+                    color = Color.Black
                 )
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)

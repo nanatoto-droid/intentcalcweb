@@ -7,7 +7,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -32,7 +34,7 @@ fun Home_Screen(navController: NavHostController) {
     Column (verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
-            .background(color = Color.LightGray)
+            .background(color = Color.DarkGray)
             .fillMaxSize()){
         Text(text = "Home screen",
             fontSize = 30.sp,
@@ -42,32 +44,39 @@ fun Home_Screen(navController: NavHostController) {
         )
         Spacer(modifier = Modifier.height(50.dp))
         Button(onClick = { navController.navigate(ROUTE_CALC) },
-            modifier = Modifier.width(300.dp)) {
+            modifier = Modifier.width(300.dp),
+            colors = ButtonDefaults.buttonColors(_root_ide_package_.androidx.compose.ui.graphics.Color.Gray),
+            shape = RoundedCornerShape(16.dp)) {
             Text(text="Calculator",
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Serif,
                 fontStyle = FontStyle.Italic,
-                color = Color.Cyan
+
             )
         }
         Spacer(modifier = Modifier.height(200.dp))
         Button(onClick = {navController.navigate(ROUTE_INTENT) },
-            modifier = Modifier.width(300.dp)) {
+            modifier = Modifier.width(300.dp),
+            colors = ButtonDefaults.buttonColors(_root_ide_package_.androidx.compose.ui.graphics.Color.Gray),
+            shape = RoundedCornerShape(16.dp))
+        {
             Text(text="Intent",
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Serif,
                 fontStyle = FontStyle.Italic,
-                color = Color.Cyan
+
             )
         }
         Spacer(modifier = Modifier.height(200.dp))
         Button(onClick = { navController.navigate(ROUTE_WEB)},
-            modifier = Modifier.width(300.dp)) {
+            modifier = Modifier.width(300.dp),
+            colors = ButtonDefaults.buttonColors(_root_ide_package_.androidx.compose.ui.graphics.Color.Gray),
+            shape = RoundedCornerShape(16.dp)) {
             Text(text="Web",
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Serif,
                 fontStyle = FontStyle.Italic,
-                color = Color.Cyan
+
             )
         }
 
