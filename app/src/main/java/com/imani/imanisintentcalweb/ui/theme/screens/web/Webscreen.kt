@@ -67,7 +67,6 @@ fun Web_Screen(navController: NavHostController) {
                     settings.javaScriptEnabled=true
                     loadUrl(url)
                 }
-
             })
         }
 
