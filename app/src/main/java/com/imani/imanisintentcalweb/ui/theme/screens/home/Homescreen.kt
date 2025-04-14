@@ -54,7 +54,7 @@ fun Home_Screen(navController: NavHostController) {
 
             )
         }
-        Spacer(modifier = Modifier.height(200.dp))
+        Spacer(modifier = Modifier.height(50.dp))
         Button(onClick = {navController.navigate(ROUTE_INTENT) },
             modifier = Modifier.width(300.dp),
             colors = ButtonDefaults.buttonColors(_root_ide_package_.androidx.compose.ui.graphics.Color.Gray),
@@ -67,7 +67,7 @@ fun Home_Screen(navController: NavHostController) {
 
             )
         }
-        Spacer(modifier = Modifier.height(200.dp))
+        Spacer(modifier = Modifier.height(50.dp))
         Button(onClick = { navController.navigate(ROUTE_WEB)},
             modifier = Modifier.width(300.dp),
             colors = ButtonDefaults.buttonColors(_root_ide_package_.androidx.compose.ui.graphics.Color.Gray),
